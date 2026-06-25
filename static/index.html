@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Text-to-SQL | Ask Your Database</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -12,7 +18,7 @@
       <header class="header">
         <div class="header-content">
           <div class="logo">
-            <span class="logo-icon">&#9000;</span>
+            <span class="logo-icon">⚡</span>
             <h1>Text-to-SQL</h1>
           </div>
           <p class="tagline">
@@ -49,7 +55,7 @@
 
           <!-- Sample Questions -->
           <div class="sample-questions">
-            <p class="sample-label">Try these:</p>
+            <p class="sample-label">Try these</p>
             <div class="sample-chips">
               <button
                 class="chip"
@@ -89,7 +95,7 @@
             <div class="panel-header">
               <span class="panel-title">Generated SQL</span>
               <button id="copy-sql-btn" class="btn-icon" title="Copy SQL">
-                <span>&#128203;</span>
+                <span>📋</span>
               </button>
             </div>
             <pre class="sql-code"><code id="sql-output"></code></pre>
@@ -97,7 +103,7 @@
 
           <!-- Error Message -->
           <div id="error-panel" class="error-panel hidden">
-            <div class="error-icon">&#9888;</div>
+            <div class="error-icon">⚠️</div>
             <p id="error-message"></p>
           </div>
 
@@ -129,7 +135,7 @@
 
       <!-- Footer -->
       <footer class="footer">
-        <p>Powered by Google Gemini + FastAPI + SQLite</p>
+        <p>Powered by Google Gemini · FastAPI · SQLite</p>
       </footer>
     </div>
 
